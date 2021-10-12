@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 style="text-align: center">Personal information register</h1>
+    <form action="user-data" method="post">
+        <div>
+            <label for="name">Name :</label>
+            <input type="text" id="name" name="user_name" required autofocus>
+        </div>
+
+        <div>
+            <label for="surname">Surname :</label>
+            <input type="text" id="surname" name="user_surname" required>
+        </div>
+
+        <div>
+            <label for="birthdate">Birthdate :</label>
+            <fieldset id="birthdate" name="birthdate">
+
+                <label for="birthdateDay">Birthdate Day :</label>
+                <input type="number" id="birthdateDay" name="user_birthdateDay" value="1" min="1" max="31">
+
+                <label for="birthdateMonth">Birthdate Month :</label>
+                <select id="birthdateMonth" name="use_birthdateMonth">
+                    <option value="jan">January</option>
+                    <option value="feb">February</option>
+                    <option value="mar">March</option>
+                    <option value="apr">April</option>
+                    <option value="may">May</option>
+                    <option value="jun">June</option>
+                    <option value="jul">July</option>
+                    <option value="aug">August</option>
+                    <option value="sep">September</option>
+                    <option value="oct">October</option>
+                    <option value="nov">November</option>
+                    <option value="dec">December</option>
+                </select>
+
+                <label for="birthdateYear">Birthdate Year :</label>
+                <input type="number" id="birthdateYear" name="user_birthdateYear"
+                       maxlength="4" min="1850" max="2021" value="1990">
+
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="sexe">Sexe (M or F) :</label>
+            <input type="text" id="sexe" name="user_sexe" maxlength="1">
+        </div>
+
+        <div>
+            <label for="email">E-Mail :</label>
+            <input type="email" id="email" name="user_email" required>
+        </div>
+
+        <div>
+            <label for="githubLink">GitHub Profile :</label>
+            <input type="text" id="githubLink" name="user_githubLink">
+        </div>
+
+        <div>
+            <label for="password">Password :</label>
+            <input type="password" id="password" name="user_password" required>
+        </div>
+
+        <div>
+            <input type="submit" value="Send" name="user_submit">
+        </div>
+    </form>
+</body>
+</html>
